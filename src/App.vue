@@ -6,6 +6,14 @@
         <Modal v-if="showModal" @closeModal="closeModal" @addNote="addNote" :edit="edit" :editNote="editNote"
             @changeNote="changeNote" />
     </Transition>
+        <div class="kh1kmatof">
+        <p>
+            by
+            <a href="https://github.com/kh1kmatof" target="_blank" rel="noopener noreferrer" class="brand">
+                kh1kmatof
+            </a>
+        </p>
+    </div>
 </template>
 
 <script>
@@ -109,5 +117,34 @@ export default {
 .modal-enter-from,
 .modal-leave-to {
     opacity: 0;
+}
+
+
+.kh1kmatof {
+    position: fixed;
+    bottom: 0;
+    margin-top: 30px;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: rgba(10, 10, 10, 0.5);
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.kh1kmatof .brand {
+    color: #000000;
+    opacity: 0.7;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.kh1kmatof .brand:hover {
+    color: #3b3b3b;
+    opacity: 1;
+    text-shadow: 0 0 8px rgba(0, 188, 212, 0.8);
 }
 </style>

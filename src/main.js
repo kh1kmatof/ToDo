@@ -9,7 +9,7 @@ const localeStorageLang = localStorage.lang
 
 const i18n = createI18n ({
     legacy: true,
-    locale: localeStorageLang || 'Ru',
+    locale: localeStorageLang || 'RU',
     messages: languages
 })
 
